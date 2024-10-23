@@ -1,1 +1,1 @@
-# allegory
+# Allegory
