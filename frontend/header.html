@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="css/header.css">
     <title>Document</title>
 </head>
@@ -18,7 +17,7 @@
                             <button class="location" id="location">
                                 <span><img src="../img/location.svg" alt="location_icon"></span>
                                 Шадринск
-                                <span class="arrow"><img src="../img/arrow.svg" alt="arrow"></span>
+                                <span class="arrow">&#8250;</span>
                             </button>
                         </li>
                         <li>
@@ -38,6 +37,19 @@
                         </li>
                     </ul>
                 </div>
+                <!--Форма выбора города-->
+                <div class="dropdown" id="dropdown">
+                    <form action="#" method="post">
+                        <div class="head">
+                            <h3>Где вы находитесь?</h3>
+                            <button id="btn-close">&times;</button>
+                        </div>
+                        <input type="search" name="city" list="cities" id="list_city" placeholder="Выберите город">
+                        <datalist id="cities">
+                            <option value="Екатеринбург"></option>
+                        </datalist>
+                    </form>
+                </div>
             </div>
         </div>
         <!--Нижняя часть шапки сайта-->
@@ -46,7 +58,10 @@
                 <div class="down-menu">
                     <img src="../img/logo.svg" alt="logo">
                     <button class="catalog">
-                        <span></span>
+                        <span>
+                            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                            <label for="burger-checkbox" class="burger"></label>
+                        </span>
                         Каталог
                     </button>
 
@@ -80,5 +95,6 @@
             </div>
         </div>
     </header>
+    <script src="js/script.js"></script>
 </body>
 </html>
