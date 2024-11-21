@@ -5,10 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="shortcut icon" href="../img/logo_small.svg" type="image/svg">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/logo_small.svg" type="image/svg">
     <title>Аллегория</title>
 </head>
 <body>
-    
+    <section>
+        <section class="offer">
+            <div class="container">
+                <form action="#">
+                    <h1 class="slogan">Найди свою следующую любимую книгу с Аллегорией</h1>
+                    <div class="src">
+                        <input type="search" name="search" id="search" placeholder="Поиск">
+                        <span><img src="img/search.svg" alt="search"></span>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <main>
+            <div class="container">
+                <article class="shares">
+                        <div class="head">
+                            <h2>Акции</h2>
+                            <a href="#">Смотреть всё &rarr;</a>
+                        </div>
+
+                        <div class="share-list">
+                            <a href="#"><img src="" alt=""></a>
+                        </div>
+                </article>
+
+                <article class="new">
+                        <div class="head">
+                            <h2>Новинки</h2>
+                            <a href="#">Смотреть всё &rarr;</a>
+                        </div>
+
+                        <div class="books-list">
+                            <div class="prev" id="prev"></div>
+                            <div class="next" id="next"></div>
+
+                            <div class="book">
+                                <div class="img_book">
+                                    <div class="mark">
+                                        <img src="img/mark_new.svg" alt="new">
+                                    </div>
+
+                                    <img src="img/image.jpg" alt="cover_book">
+
+                                    <div class="rate">
+                                        <img src="img/star.svg" alt="star">
+                                        <p>4.5</p>
+                                    </div>
+                                </div>
+
+                                <p class="title">Убийство по алфавиту</p>
+                                <p class="author">Агата Кристи</p>
+
+                                <div class="cost">
+                                    <p class="price">311 ₽</p>
+                                    <p class="dcnt">419</p>
+                                    <div class="discount">
+                                        <p>25%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </article>
+            </div>
+        </main>
+
+    </section>
 </body>
 </html>
