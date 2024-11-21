@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #f6f6f6;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 36px;
+    font-family: "Ysabeau Infant", sans-serif;
+    font-weight: 500;
+}
+
+.container {
+    margin: 0px auto;
+    width: 1480px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #05885f;
+}
+
+/*Основная часть*/
+
+.offer {
+    background-image: url(../img/img_offer.jpg);
+    padding-top: 235px;
+    padding-bottom: 235px;
+}
+
+form {
+    background-color: rgba(44, 44, 42, 0.5);
+    text-align: center;
+    padding: 25px;
+    width: 1005px;
+    height: 280px;
+    margin-left: 200px;
+}
