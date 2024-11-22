@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0px;
 }
 
+p {
+    margin: 0px;
+}
+
 .container {
     margin: 0px auto;
     width: 1480px;
@@ -86,13 +90,63 @@ main {
     margin-bottom: 150px;
 }
 
+article h2 {
+    margin-bottom: 80px;
+}
+
 /*Акции*/
 
 .share-list {
     display: flex;
-    margin-top: 80px;
 }
 
 .share {
     margin-right: 20px;
+}
+
+/*Новинки*/
+
+.new {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.book-list {
+    display: flex;
+}
+
+.img-book, .cover {
+    width: 220px;
+    height: 290px;
+}
+
+.cover {
+    margin-top: -2%;
+}
+
+.mark {
+    margin-left: 12%;
+}
+
+.rate {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    width: 60px;
+    height: 28px;
+    align-items: center;
+    align-content: center;
+    margin-top: -1.9%;
+    margin-left: 10.8%;
+}
+
+.rate img {
+    width: 20px;
+    height: 19px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.cost {
+    display: flex;
 }
