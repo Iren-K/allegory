@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #000000;
     background-color: #f6f6f6;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 36px;
     font-family: "Ysabeau Infant", sans-serif;
     font-weight: 500;
+    margin: 0px;
 }
 
 .container {
@@ -21,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
 }
 
 a:hover {
@@ -38,9 +39,60 @@ a:hover {
 
 form {
     background-color: rgba(44, 44, 42, 0.5);
+    backdrop-filter: blur(10px);
     text-align: center;
-    padding: 25px;
-    width: 1005px;
+    padding: 25px 150px;
+    width: 705px;
     height: 280px;
-    margin-left: 200px;
+    margin-left: 212px;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.src {
+    width: 700px;
+    height: 60px;
+    display: flex;
+}
+
+.src input {
+    margin: 0;
+    height: 60px;
+    border: 0px;
+    width: 640px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.src div {
+    height: 60px;
+    width: 60px;
+    align-items: center;
+    align-content: center;
+    background-color: #05885f;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 140px;
+    margin-bottom: 150px;
+}
+
+/*Акции*/
+
+.share-list {
+    display: flex;
+    margin-top: 80px;
+}
+
+.share {
+    margin-right: 20px;
 }
