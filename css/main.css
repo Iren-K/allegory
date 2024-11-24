@@ -111,33 +111,50 @@ article h2 {
     margin-bottom: 150px;
 }
 
-.book-list {
-    display: flex;
+.new h2 {
+    margin-bottom: 45px;
 }
 
-.img-book, .cover {
+.book-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+/*Книги*/
+
+.book-list {
+    display: flex;
+    position: relative;
+}
+
+.book {
+    margin-right: 73px;
+    width: 232px;
+}
+
+.img_book, .cover {
     width: 220px;
     height: 290px;
 }
 
 .cover {
-    margin-top: -2%;
+    margin-top: -14%;
 }
 
 .mark {
-    margin-left: 12%;
+    margin-left: 78%;
 }
 
 .rate {
     display: flex;
     background-color: #fff;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.5);
     width: 60px;
     height: 28px;
     align-items: center;
     align-content: center;
-    margin-top: -1.9%;
-    margin-left: 10.8%;
+    margin-top: -12%;
+    margin-left: 73%;
 }
 
 .rate img {
@@ -147,6 +164,94 @@ article h2 {
     margin-left: 5px;
 }
 
+.title {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.author {
+    color: #838383;
+    margin-bottom: 25px;
+}
+
+.price {
+    font-size: 21px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.dcnt {
+    color: #838383;
+    text-decoration: line-through;
+    margin-right: 81.9px;
+}
+
+.discount {
+    width: 48px;
+    height: 24px;
+    background-color: #EA0F51;
+    color: #fff;
+    text-align: center;
+    align-content: center;
+    border-radius: 3px;
+}
+
 .cost {
     display: flex;
+}
+
+.btns-buy {
+    display: flex;
+    margin-top: 10px;
+}
+
+.buy {
+    background-color: #036446;
+    color: #fff;
+    text-align: center;
+    align-content: center;
+    border-radius: 3px;
+    width: 172px;
+    height: 43px;
+    margin-right: 5px;
+    border: none;
+    font-size: 20px;
+}
+
+.marked {
+    background: none;
+    border: 1px solid #036446;
+    border-radius: 3px;
+    text-align: center;
+    align-content: center;
+    width: 43px;
+    height: 43px;
+}
+
+.marked img {
+    border-color: #036446;
+}
+
+/*Кнопки*/
+
+#prev, #next {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .2s ease-in-o
+}
+
+#prev-btn:hover, #btn-next:hover {
+    opacity: 0.6;
+}
+
+
+#next-btn {
+    left: auto;
+    right: 0;
 }
