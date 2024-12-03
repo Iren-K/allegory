@@ -115,34 +115,63 @@ article h2 {
     margin-bottom: 45px;
 }
 
-.book-wrapper {
+.wrapper {
     display: flex;
     width: 100%;
+    align-items: center;
+    
 }
+
+.wrapper .books {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 5) - 25px);
+    gap: 25px;
+    overflow: hidden;
+}
+
+.books :where(.book, .cover) {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper .b {
+    height: 82px;
+    width: 26px;
+    text-align: center;
+    line-height: 50%;
+    cursor: pointer;
+    position: absolute;
+}
+
 
 /*Книги*/
 
-.book-list {
-    display: flex;
-    position: relative;
-}
-
 .book {
-    margin-right: 73px;
     width: 232px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
 }
 
-.img_book, .cover {
+.img_book, .cover img {
     width: 220px;
     height: 290px;
+    margin-top: -7%;
 }
 
-.cover {
-    margin-top: -14%;
+.cover img {
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
 }
 
 .mark {
     margin-left: 78%;
+    position: relative;
+    z-index: 2;
 }
 
 .rate {
@@ -153,8 +182,10 @@ article h2 {
     height: 28px;
     align-items: center;
     align-content: center;
-    margin-top: -12%;
+    margin-top: -14%;
     margin-left: 73%;
+    position: relative;
+    z-index: 2;
 }
 
 .rate img {
@@ -217,6 +248,11 @@ article h2 {
     margin-right: 5px;
     border: none;
     font-size: 20px;
+    cursor: pointer;
+}
+
+.buy:hover {
+    background-color: #035139;
 }
 
 .marked {
@@ -227,31 +263,20 @@ article h2 {
     align-content: center;
     width: 43px;
     height: 43px;
-}
-
-.marked img {
-    border-color: #036446;
-}
-
-/*Кнопки*/
-
-#prev, #next {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 50px;
-    opacity: 0.4;
     cursor: pointer;
-    transition: opacity .2s ease-in-o
+    padding: 0px 12px;
+    padding-top: 2%;
 }
 
-#prev-btn:hover, #btn-next:hover {
-    opacity: 0.6;
+svg {
+    background: none;
 }
 
+.marked:hover>svg>path {
+    stroke: #036446;
+    fill:#036446;
+}
 
-#next-btn {
-    left: auto;
-    right: 0;
+.marked:hover {
+    background-color: #ebf4f1;
 }
