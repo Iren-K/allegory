@@ -134,10 +134,15 @@ input {
     font-size: 18px;
 }
 
+
 /*Нижняя часть шапки сайта*/
 
 .down-header {
     background-color: #2C2C2A;
+}
+
+.logo {
+    object-fit: contain;
 }
 
 .menu {
@@ -269,4 +274,8 @@ input {
     margin-left: 25px;
     padding: 0;
     cursor: pointer;
+}
+
+.user img {
+    object-fit: contain;
 }

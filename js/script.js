@@ -5,6 +5,7 @@ const btnClose = document.getElementById('btn-close');
 const btnCatalog = document.getElementById('btn-catalog');
 const burger = document.getElementById('burger');
 const catalog = document.getElementById('catalog');
+const carousel = document.getElementById('books');
 
 var tabHead = document.querySelectorAll(".tab");
 var tabContent = document.querySelectorAll(".col");
@@ -47,4 +48,4 @@ for (var i = 0; i < tabHead.length; i++) {
 		}
 	  };
 	});
-  };
+};

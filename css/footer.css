@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #f6f6f6;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 36px;
+    font-family: "Ysabeau Infant", sans-serif;
+    font-weight: 500;
+}
+
+.container {
+    margin: 0px auto;
+    width: 1480px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #05885f;
+}
+
+.social-net, .about_company, .help, .pay {
+    list-style-type: none;
+    margin: 0;
+}
+
+/*Верхняя часть подвала сайта*/
+
+.upper-footer {
+    background-color: #2C2C2A;
+    padding: 65px 0px;
+}
+
+.upper-footer .container {
+    display: flex;
+}
+
+.upper-footer p:first-child {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.p {
+    color: #838383;
+}
+
+.social-net {
+    padding: 0px;
+    display: flex;
+    margin-top: 100px;
+}
+
+.social-net li {
+    margin-right: 30px;
+}
+
+.social-net li a img{
+    object-fit: contain;
+}
+
+.col-1, .col-2 {
+    margin-right: 225px;
+}
+
+.about_company, .help {
+    padding: 0px;
+}
+
+.about_company li, .help li{
+    margin-bottom: 10px;
+}
+
+/*Нижняя часть подвала сайта*/
+
+.down-footer {
+    background-color: #232322;
+    padding: 30px;
+}
+
+.down-footer .container {
+    justify-content: space-between;
+}
+
+.down-footer .container, .copyright, .pay {
+    display: flex;
+}
+
+.copyright img{
+    height: 21px;
+    object-fit: contain;
+}
+
+.copyright p{
+    color: #838383;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.pay li {
+    margin-right: 15px;
+    color: #838383;
+}
+
+.pay li img {
+    object-fit: contain;
+}
+
+/*Адаптация под другие устройства*/
+
+@media screen and (max-width: 1540px) {
+    .container {
+        width: 1300px;
+    }
+    .upper-footer p:first-child {
+        font-size: 20px;
+    }
+    p, a {
+        font-size: 15px;
+    }
+    .social-net {
+        margin-top: 90px;
+    }
+    .social-net li {
+        margin-right: 20px;
+    }
+    .social-net li a img{
+        height: 25px;
+    }
+    .down-footer {
+        padding: 25px;
+    }
+    .copyright img {
+        height: 19px;
+    }
+    .copyright p {
+        font-size: 15px;
+    }
+    .pay li {
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    .pay li img {
+        height: 19px;
+    }
+}

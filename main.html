@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="js/script.js"></script>
+    <script src="js/swiper.js"></script>
     <link rel="shortcut icon" href="img/logo_small.svg" type="image/svg">
     <title>Аллегория</title>
 </head>
@@ -44,40 +46,10 @@
                             <h2>Новинки</h2>
                             <a href="#">Смотреть всё &rarr;</a>
                         </div>
-                        <div class="wrapper">
-                            <img src="img/prev.svg" class="b prev" id="prev" alt="btn-prev">
-                            <ul class="books">
-                                <li class="book" id="book">
-                                        <span class="mark">
-                                            <img src="img/mark_new.svg" alt="new">
-                                        </span>
-                                        <div class="img_book">
-                                            <div class="cover"><img src="img/books/image.jpg" alt="cover"></div>
-                                            <div class="rate">
-                                                <img src="img/star.svg" alt="star">
-                                                <p>4.5</p>
-                                            </div>
-                                        </div>
-                                        <p class="title">Убийство по алфавиту</p>
-                                        <p class="author">Агата Кристи</p>
-                                        <div class="cost">
-                                            <p class="price">311 ₽</p>
-                                            <p class="dcnt">419</p>
-                                            <div class="discount">
-                                                <p>25%</p>
-                                            </div>
-                                        </div>
-                                        <div class="btns-buy" id="btns-buy">
-                                            <button class="buy" id="buy">Купить</button>
-                                            <button class="marked" id="marked">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="6 4 14 17" fill="none">
-                                                    <path d="M17 5v14l-5-3.111L7 19V5h10z" stroke="#898989" stroke-width="1" background="none" stroke-linecap="square" stroke-linejoin="arcs"></path>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                </li>
+                        <div class="swiper">
+                            <div class="books swiper-wrapper" id="books">
 
-                                <li class="book" id="book">
+                                <div class="book swiper-slide" id="book">
                                     <span class="mark">
                                         <img src="img/mark_new.svg" alt="new">
                                     </span>
@@ -105,9 +77,9 @@
                                             </svg>
                                         </button>
                                     </div>
-                                </li>
+                                </div>
 
-                                <li class="book" id="book">
+                                <div class="book swiper-slide" id="book">
                                     <span class="mark">
                                         <img src="img/mark_new.svg" alt="new">
                                     </span>
@@ -135,9 +107,9 @@
                                             </svg>
                                         </button>
                                     </div>
-                                </li>
+                                </div>
 
-                                <li class="book" id="book">
+                                <div class="book swiper-slide" id="book">
                                     <span class="mark">
                                         <img src="img/mark_new.svg" alt="new">
                                     </span>
@@ -165,9 +137,9 @@
                                             </svg>
                                         </button>
                                     </div>
-                                </li>
+                                </div>
 
-                                <li class="book" id="book">
+                                <div class="book swiper-slide" id="book">
                                     <span class="mark">
                                         <img src="img/mark_new.svg" alt="new">
                                     </span>
@@ -195,41 +167,9 @@
                                             </svg>
                                         </button>
                                     </div>
-                                </li>
+                                </div>
 
-                                <li class="book" id="book">
-                                    <span class="mark">
-                                        <img src="img/mark_new.svg" alt="new">
-                                    </span>
-                                    <div class="img_book">
-                                        <div class="cover">
-                                            <img src="img/books/image.jpg" alt="cover">
-                                        </div>
-                                        <div class="rate">
-                                            <img src="img/star.svg" alt="star">
-                                            <p>4.5</p>
-                                        </div>
-                                    </div>
-                                    <p class="title">Убийство по алфавиту</p>
-                                    <p class="author">Агата Кристи</p>
-                                    <div class="cost">
-                                        <p class="price">311 ₽</p>
-                                        <p class="dcnt">419</p>
-                                        <div class="discount">
-                                            <p>25%</p>
-                                        </div>
-                                    </div>
-                                    <div class="btns-buy" id="btns-buy">
-                                        <button class="buy" id="buy">Купить</button>
-                                        <button class="marked" id="marked">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="6 4 14 17" fill="none">
-                                                <path d="M17 5v14l-5-3.111L7 19V5h10z" stroke="#898989" stroke-width="1" background="none" stroke-linecap="square" stroke-linejoin="arcs"></path>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </li>
-
-                                <li class="book" id="book">
+                                <div class="book swiper-slide" id="book">
                                     <span class="mark">
                                         <img src="img/mark_new.svg" alt="new">
                                     </span>
@@ -257,9 +197,9 @@
                                             </svg>
                                         </button>
                                     </div>
-                                </li>
+                                </div>
 
-                                <li class="book" id="book">
+                                <div class="book swiper-slide" id="book">
                                     <span class="mark">
                                         <img src="img/mark_new.svg" alt="new">
                                     </span>
@@ -287,9 +227,9 @@
                                             </svg>
                                         </button>
                                     </div>
-                                </li>
+                                </div>
 
-                                <li class="book" id="book">
+                                <div class="book swiper-slide" id="book">
                                     <span class="mark">
                                         <img src="img/mark_new.svg" alt="new">
                                     </span>
@@ -317,9 +257,9 @@
                                             </svg>
                                         </button>
                                     </div>
-                                </li>
+                                </div>
 
-                                <li class="book" id="book">
+                                <div class="book swiper-slide" id="book">
                                     <span class="mark">
                                         <img src="img/mark_new.svg" alt="new">
                                     </span>
@@ -347,14 +287,107 @@
                                             </svg>
                                         </button>
                                     </div>
-                                </li>
-                            </ul>
-                            <img src="img/next.svg" class="b next" id="next" alt="btn-next">
+                                </div>
+
+                                <div class="book swiper-slide" id="book">
+                                    <span class="mark">
+                                        <img src="img/mark_new.svg" alt="new">
+                                    </span>
+                                    <div class="img_book">
+                                        <div class="cover"><img src="img/books/image.jpg" alt="cover"></div>
+                                        <div class="rate">
+                                            <img src="img/star.svg" alt="star">
+                                            <p>4.5</p>
+                                        </div>
+                                    </div>
+                                    <p class="title">Убийство по алфавиту</p>
+                                    <p class="author">Агата Кристи</p>
+                                    <div class="cost">
+                                        <p class="price">311 ₽</p>
+                                        <p class="dcnt">419</p>
+                                        <div class="discount">
+                                            <p>25%</p>
+                                        </div>
+                                    </div>
+                                    <div class="btns-buy" id="btns-buy">
+                                        <button class="buy" id="buy">Купить</button>
+                                        <button class="marked" id="marked">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="6 4 14 17" fill="none">
+                                                <path d="M17 5v14l-5-3.111L7 19V5h10z" stroke="#898989" stroke-width="1" background="none" stroke-linecap="square" stroke-linejoin="arcs"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="book swiper-slide" id="book">
+                                    <span class="mark">
+                                        <img src="img/mark_new.svg" alt="new">
+                                    </span>
+                                    <div class="img_book">
+                                        <div class="cover"><img src="img/books/image.jpg" alt="cover"></div>
+                                        <div class="rate">
+                                            <img src="img/star.svg" alt="star">
+                                            <p>4.5</p>
+                                        </div>
+                                    </div>
+                                    <p class="title">Убийство по алфавиту</p>
+                                    <p class="author">Агата Кристи</p>
+                                    <div class="cost">
+                                        <p class="price">311 ₽</p>
+                                        <p class="dcnt">419</p>
+                                        <div class="discount">
+                                            <p>25%</p>
+                                        </div>
+                                    </div>
+                                    <div class="btns-buy" id="btns-buy">
+                                        <button class="buy" id="buy">Купить</button>
+                                        <button class="marked" id="marked">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="6 4 14 17" fill="none">
+                                                <path d="M17 5v14l-5-3.111L7 19V5h10z" stroke="#898989" stroke-width="1" background="none" stroke-linecap="square" stroke-linejoin="arcs"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="book swiper-slide" id="book">
+                                    <span class="mark">
+                                        <img src="img/mark_new.svg" alt="new">
+                                    </span>
+                                    <div class="img_book">
+                                        <div class="cover"><img src="img/books/image.jpg" alt="cover"></div>
+                                        <div class="rate">
+                                            <img src="img/star.svg" alt="star">
+                                            <p>4.5</p>
+                                        </div>
+                                    </div>
+                                    <p class="title">Убийство по алфавиту</p>
+                                    <p class="author">Агата Кристи</p>
+                                    <div class="cost">
+                                        <p class="price">311 ₽</p>
+                                        <p class="dcnt">419</p>
+                                        <div class="discount">
+                                            <p>25%</p>
+                                        </div>
+                                    </div>
+                                    <div class="btns-buy" id="btns-buy">
+                                        <button class="buy" id="buy">Купить</button>
+                                        <button class="marked" id="marked">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="6 4 14 17" fill="none">
+                                                <path d="M17 5v14l-5-3.111L7 19V5h10z" stroke="#898989" stroke-width="1" background="none" stroke-linecap="square" stroke-linejoin="arcs"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev" id="prev"></div>
+                            <div class="swiper-button-next" id="next"></div>
                         </div>
                 </article>
             </div>
         </main>
 
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

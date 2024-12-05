@@ -37,6 +37,7 @@ a:hover {
 
 .offer {
     background-image: url(../img/img_offer.jpg);
+    object-fit: contain;
     padding-top: 235px;
     padding-bottom: 235px;
 }
@@ -104,44 +105,32 @@ article h2 {
     margin-right: 20px;
 }
 
+.share img {
+    object-fit: contain;
+}
+
 /*Новинки*/
 
 .new {
     margin-top: 150px;
     margin-bottom: 150px;
+    box-sizing: border-box;
 }
 
 .new h2 {
     margin-bottom: 45px;
 }
 
-.wrapper {
+.swiper {
     display: flex;
     width: 100%;
     align-items: center;
-    
-}
-
-.wrapper .books {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 5) - 25px);
-    gap: 25px;
-    overflow: hidden;
-}
-
-.books :where(.book, .cover) {
-    display: flex;
     justify-content: center;
+    max-width: 1575px;
 }
 
-.wrapper .b {
-    height: 82px;
-    width: 26px;
-    text-align: center;
-    line-height: 50%;
-    cursor: pointer;
-    position: absolute;
+.swiper .books {
+    overflow: hidden;
 }
 
 
@@ -149,6 +138,7 @@ article h2 {
 
 .book {
     width: 232px;
+    margin-right: 75px;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -279,4 +269,10 @@ svg {
 
 .marked:hover {
     background-color: #ebf4f1;
+}
+
+@media screen and (max-width: 770px){
+    .wrapper .books {
+        grid-auto-columns: calc((100% / 4) - 23px);
+    }
 }
