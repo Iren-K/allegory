@@ -271,8 +271,8 @@ svg {
     background-color: #ebf4f1;
 }
 
-@media screen and (max-width: 770px){
-    .wrapper .books {
-        grid-auto-columns: calc((100% / 4) - 23px);
+@media screen and (max-width: 1540px){
+    .container {
+        width: 1300px;
     }
 }
