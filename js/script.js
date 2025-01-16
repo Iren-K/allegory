@@ -49,3 +49,30 @@ for (var i = 0; i < tabHead.length; i++) {
 	  };
 	});
 };
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('.slider');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    let currentIndex = 0;
+    const cardWidth = document.querySelector('.card').offsetWidth + parseInt(window.getComputedStyle(document.querySelector('.card')).marginRight);
+
+    function moveSlider() {
+        slider.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
+    }
+
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            moveSlider();
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        if (currentIndex < slider.children.length - 1) {
+            currentIndex++;
+            moveSlider();
+        }
+    });
+});
